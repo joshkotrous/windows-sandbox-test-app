@@ -13,7 +13,7 @@ namespace HelloWorldApp.Controllers.Api
         // GET api/hello/{name}
         public IHttpActionResult Get(string id)
         {
-            return Ok(new { message = $"Hello, {id}!", timestamp = System.DateTime.UtcNow });
+            return Ok(new { message = "Hello, " + id + "!", timestamp = System.DateTime.UtcNow });
         }
     }
 }
