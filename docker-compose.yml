@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  helloworld:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    # Windows containers require isolation mode on non-Server Windows
+    # Use 'process' on Windows Server, 'hyperv' on Windows 10/11
+    isolation: process

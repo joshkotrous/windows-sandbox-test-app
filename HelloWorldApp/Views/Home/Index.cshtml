@@ -1,0 +1,75 @@
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="hello-container">
+    <div class="card">
+        <h1>@ViewBag.Message</h1>
+        <p>Welcome to your legacy .NET Framework application!</p>
+        
+        <div class="api-section">
+            <h2>API Endpoints</h2>
+            <ul>
+                <li><a href="/api/hello" target="_blank">GET /api/hello</a> - Returns a hello world JSON response</li>
+                <li><a href="/api/hello/YourName" target="_blank">GET /api/hello/{name}</a> - Returns a personalized greeting</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hello-container {
+        width: 100%;
+        max-width: 600px;
+    }
+    .card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 3rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+    .card h1 {
+        color: #1e3c72;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    .card > p {
+        color: #666;
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+    .api-section {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: left;
+    }
+    .api-section h2 {
+        color: #333;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #1e3c72;
+        padding-bottom: 0.5rem;
+    }
+    .api-section ul {
+        list-style: none;
+    }
+    .api-section li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #e9ecef;
+    }
+    .api-section li:last-child {
+        border-bottom: none;
+    }
+    .api-section a {
+        color: #2a5298;
+        text-decoration: none;
+        font-family: 'Consolas', 'Monaco', monospace;
+        font-weight: 600;
+    }
+    .api-section a:hover {
+        text-decoration: underline;
+    }
+</style>
